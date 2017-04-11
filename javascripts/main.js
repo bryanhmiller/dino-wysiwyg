@@ -13,15 +13,14 @@ function makeDom(myArrayToPrint) {
 		if (i % 3 === 0) {
 			myDomString += `<div class="row">`;
 		}
-		myDomString += `<div class="col-lg-3"`;
-		myDomString += `<div class="dinoCard">`;
+		myDomString += `<div class="dinoCard col-sm-3">`;
 		myDomString += `<header><h1>${myArrayToPrint[i].type}</h1></header>`;
 		myDomString += `<section>`;
 		myDomString += `<img src="${myArrayToPrint[i].img}">`;
 		myDomString += `<p class="bio">${myArrayToPrint[i].bio}</p>`;
 		myDomString += `</section>`;
 		myDomString += `<footer>${myArrayToPrint[i].info}</footer>`;
-		myDomString += `</div></div>`;		
+		myDomString += `</div>`;		
 		if (i % 3 === 0) {
 			myDomString += `</div>`;
 		}
